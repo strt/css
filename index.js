@@ -138,7 +138,6 @@ module.exports = {
             "text-indent",
             "text-shadow",
             "text-transform",
-            "vertical-align",
             "white-space",
             "word-break",
             "word-spacing",
