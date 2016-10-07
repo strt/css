@@ -1,0 +1,22 @@
+{
+  "name": "stylelint-config-strateg",
+  "version": "1.0.0",
+  "description": "Strateg config for stylelint",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strt/stylelint-config-strateg.git"
+  },
+  "author": "Strateg Marknadsföring AB",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/strt/stylelint-config-strateg/issues"
+  },
+  "homepage": "https://github.com/strt/stylelint-config-strateg#readme",
+  "dependencies": {
+    "stylelint-config-standard": "^13.0.2"
+  }
+}
