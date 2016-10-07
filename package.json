@@ -4,7 +4,7 @@
   "description": "Strateg config for stylelint",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "npmpub"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "homepage": "https://github.com/strt/stylelint-config-strateg#readme",
   "dependencies": {
     "stylelint-config-standard": "^13.0.2"
+  },
+  "devDependencies": {
+    "npmpub": "^3.1.0"
   }
 }
