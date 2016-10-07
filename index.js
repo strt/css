@@ -5,7 +5,10 @@ module.exports = {
     "function-comma-space-after": "always-single-line",
     "declaration-empty-line-before": "never",
     "at-rule-empty-line-before": {
-      "ignoreAtRules": ["else", "if"]
+      "ignoreAtRules": [
+        "else",
+        "if"
+      ]
     },
     "string-quotes": "single"
   }
