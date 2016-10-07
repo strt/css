@@ -165,6 +165,15 @@ module.exports = {
             "opacity"
           ]
         }
+
+        // Animation
+        {
+          "order": "flexible",
+          "properties": [
+            "animation",
+            "transition"
+          ]
+        }
       ], { "unspecified": "ignore" }
     ]
   }
