@@ -25,6 +25,7 @@ module.exports = {
             "left"
           ]
         },
+
         // Box-Model
         {
           "order": "flexible",
@@ -104,6 +105,7 @@ module.exports = {
             "width"
           ]
         },
+
         // Table
         {
           "order": "flexible",
@@ -115,6 +117,35 @@ module.exports = {
             "table-layout"
           ]
         },
+
+        // Typography
+        {
+          "order": "flexible",
+          "properties": [
+            "color",
+            "font-family",
+            "font-size-adjust",
+            "font-size",
+            "font-stretch",
+            "font-style",
+            "font-variant",
+            "font-weight",
+            "font",
+            "letter-spacing",
+            "line-height",
+            "text-align",
+            "text-decoration",
+            "text-indent",
+            "text-shadow",
+            "text-transform",
+            "vertical-align",
+            "white-space",
+            "word-break",
+            "word-spacing",
+            "word-wrap"
+          ]
+        },
+
         // Visual
         {
           "order": "flexible",
