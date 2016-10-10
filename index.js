@@ -5,10 +5,15 @@ module.exports = {
     "function-comma-space-after": "always-single-line",
     "declaration-empty-line-before": "never",
     "at-rule-empty-line-before": {
+      except: [
+        "blockless-after-same-name-blockless",
+        "first-nested",
+      ],
+      ignore: ["after-comment"],
       ignoreAtRules: [
         "else",
         "if"
-      ]
+      ],
     },
     "string-quotes": "single",
     "declaration-block-properties-order": [
