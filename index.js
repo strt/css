@@ -6,6 +6,8 @@ module.exports = {
     "declaration-empty-line-before": "never",
     "at-rule-empty-line-before": ["always", {
       ignoreAtRules: [
+        "blockless-after-same-name-blockless",
+        "first-nested",
         "else",
         "if"
       ]
