@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-strateg",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "Strateg config for stylelint",
   "main": "index.js",
   "scripts": {
@@ -18,5 +18,9 @@
   "homepage": "https://github.com/strt/stylelint-config-strateg#readme",
   "dependencies": {
     "stylelint-config-standard": "^13.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.7.1",
+    "eslint-config-google": "^0.6.0"
   }
 }

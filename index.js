@@ -174,7 +174,7 @@ module.exports = {
             "transition"
           ]
         }
-      ], { "unspecified": "ignore" }
+      ], {"unspecified": "ignore"}
     ]
   }
-}
+};
