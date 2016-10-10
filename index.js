@@ -4,7 +4,7 @@ module.exports = {
     "color-hex-length": "long",
     "function-comma-space-after": "always-single-line",
     "declaration-empty-line-before": "never",
-    "at-rule-empty-line-before": {
+    "at-rule-empty-line-before": ["always", {
       except: [
         "blockless-after-same-name-blockless",
         "first-nested",
@@ -14,7 +14,7 @@ module.exports = {
         "else",
         "if"
       ],
-    },
+    }],
     "string-quotes": "single",
     "declaration-block-properties-order": [
       [
