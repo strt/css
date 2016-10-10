@@ -4,12 +4,12 @@ module.exports = {
     "color-hex-length": "long",
     "function-comma-space-after": "always-single-line",
     "declaration-empty-line-before": "never",
-    "at-rule-empty-line-before": {
-      "ignoreAtRules": [
+    "at-rule-empty-line-before": ["always", {
+      ignoreAtRules: [
         "else",
         "if"
       ]
-    },
+    }],
     "string-quotes": "single",
     "declaration-block-properties-order": [
       [
