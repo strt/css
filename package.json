@@ -1,10 +1,10 @@
 {
   "name": "stylelint-config-strateg",
-  "version": "1.0.13",
+  "version": "1.2.0",
   "description": "Strateg config for stylelint",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "eslint *.js"
   },
   "repository": {
     "type": "git",
@@ -17,13 +17,14 @@
   },
   "homepage": "https://github.com/strt/stylelint-config-strateg#readme",
   "dependencies": {
-    "stylelint-config-standard": "^13.0.2"
+    "stylelint-config-standard": "^16.0.0",
+    "stylelint-order": "^0.4.0"
   },
   "devDependencies": {
-    "eslint": "^3.7.1",
-    "eslint-config-google": "^0.6.0"
+    "eslint": "^3.17.1",
+    "eslint-config-google": "^0.7.1"
   },
   "peerDependencies": {
-    "stylelint": "^7.2.0"
+    "stylelint": "^7.9.0"
   }
 }
