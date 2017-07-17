@@ -1,9 +1,10 @@
 module.exports = {
-  'extends': 'stylelint-config-standard',
-  'plugins': [
+  extends: 'stylelint-config-standard',
+  plugins: [
+    'stylelint-scss',
     'stylelint-order',
   ],
-  'rules': {
+  rules: {
     'color-hex-length': 'long',
     'function-comma-space-after': 'always-single-line',
     'declaration-empty-line-before': 'never',
@@ -19,12 +20,13 @@ module.exports = {
       ],
     }],
     'string-quotes': 'single',
+    'at-rule-no-unknown': null,
+    'scss/at-rule-no-unknown': true,
     'order/properties-order': [
       [
-        // Positioning
-        {
-          'order': 'flexible',
-          'properties': [
+        { // Positioning
+          order: 'flexible',
+          properties: [
             'position',
             'z-index',
             'top',
@@ -33,10 +35,9 @@ module.exports = {
             'left',
           ],
         },
-        // Box-Model
-        {
-          'order': 'flexible',
-          'properties': [
+        { // Box-Model
+          order: 'flexible',
+          properties: [
             'align-content',
             'align-items',
             'align-self',
@@ -112,10 +113,9 @@ module.exports = {
             'width',
           ],
         },
-        // Table
-        {
-          'order': 'flexible',
-          'properties': [
+        { // Table
+          order: 'flexible',
+          properties: [
             'border-collapse',
             'border-spacing',
             'caption-side',
@@ -123,10 +123,9 @@ module.exports = {
             'table-layout',
           ],
         },
-        // Typography
-        {
-          'order': 'flexible',
-          'properties': [
+        { // Typography
+          order: 'flexible',
+          properties: [
             'color',
             'font-family',
             'font-size-adjust',
@@ -149,10 +148,9 @@ module.exports = {
             'word-wrap',
           ],
         },
-        // Visual
-        {
-          'order': 'flexible',
-          'properties': [
+        { // Visual
+          order: 'flexible',
+          properties: [
             'background-attachment',
             'background-clip',
             'background-color',
@@ -169,17 +167,17 @@ module.exports = {
             'opacity',
           ],
         },
-        // Animation
-        {
-          'order': 'flexible',
-          'properties': [
+        { // Animation
+          order: 'flexible',
+          properties: [
             'animation',
             'transition',
           ],
         },
       ],
       {
-        'unspecified': 'ignore',
+        disableFix: true,
+        unspecified: 'ignore',
       },
     ],
   },
