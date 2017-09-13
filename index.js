@@ -20,6 +20,7 @@ module.exports = {
       ],
     }],
     'string-quotes': 'single',
+    'at-import-no-partial-leading-underscore': true,
     'at-rule-no-unknown': null,
     'scss/at-rule-no-unknown': true,
     'order/properties-order': [
