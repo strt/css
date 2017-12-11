@@ -1,6 +1,3 @@
 {
-  "extends": "eslint-config-google",
-  "rules": {
-    "quote-props": 0
-  }
+  "extends": "eslint-config-google"
 }

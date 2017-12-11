@@ -1,41 +1,31 @@
 module.exports = {
   extends: 'stylelint-config-standard',
-  plugins: [
-    'stylelint-scss',
-    'stylelint-order',
-  ],
+  plugins: ['stylelint-scss', 'stylelint-order'],
   rules: {
     'color-hex-length': 'long',
     'function-comma-space-after': 'always-single-line',
     'declaration-empty-line-before': 'never',
-    'at-rule-empty-line-before': ['always', {
-      except: [
-        'blockless-after-same-name-blockless',
-        'first-nested',
-      ],
-      ignore: ['after-comment'],
-      ignoreAtRules: [
-        'else',
-        'if',
-      ],
-    }],
+    'no-descending-specificity': null,
+    'at-rule-empty-line-before': [
+      'always',
+      {
+        except: ['blockless-after-same-name-blockless', 'first-nested'],
+        ignore: ['after-comment'],
+        ignoreAtRules: ['else', 'if'],
+      },
+    ],
     'string-quotes': 'single',
     'at-rule-no-unknown': null,
     'scss/at-rule-no-unknown': true,
     'order/properties-order': [
       [
-        { // Positioning
+        {
+          // Positioning
           order: 'flexible',
-          properties: [
-            'position',
-            'z-index',
-            'top',
-            'right',
-            'bottom',
-            'left',
-          ],
+          properties: ['position', 'z-index', 'top', 'right', 'bottom', 'left'],
         },
-        { // Box-Model
+        {
+          // Box-Model
           order: 'flexible',
           properties: [
             'align-content',
@@ -113,7 +103,8 @@ module.exports = {
             'width',
           ],
         },
-        { // Table
+        {
+          // Table
           order: 'flexible',
           properties: [
             'border-collapse',
@@ -123,7 +114,8 @@ module.exports = {
             'table-layout',
           ],
         },
-        { // Typography
+        {
+          // Typography
           order: 'flexible',
           properties: [
             'color',
@@ -148,7 +140,8 @@ module.exports = {
             'word-wrap',
           ],
         },
-        { // Visual
+        {
+          // Visual
           order: 'flexible',
           properties: [
             'background-attachment',
@@ -167,12 +160,10 @@ module.exports = {
             'opacity',
           ],
         },
-        { // Animation
+        {
+          // Animation
           order: 'flexible',
-          properties: [
-            'animation',
-            'transition',
-          ],
+          properties: ['animation', 'transition'],
         },
       ],
       {
