@@ -1,21 +1,21 @@
 {
   "name": "stylelint-config-strateg",
   "version": "1.5.3",
-  "description": "Strateg config for stylelint",
+  "description": "Strateg's Stylelint config",
   "main": "index.js",
   "scripts": {
     "test": "eslint *.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/strt/stylelint-config-strateg.git"
+    "url": "git+https://github.com/strt/css.git"
   },
   "author": "Strateg Marknadsföring AB",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/strt/stylelint-config-strateg/issues"
+    "url": "https://github.com/strt/css/issues"
   },
-  "homepage": "https://github.com/strt/stylelint-config-strateg#readme",
+  "homepage": "https://github.com/strt/css#readme",
   "dependencies": {
     "stylelint-config-standard": "^18.0.0",
     "stylelint-order": "^0.8.0",
