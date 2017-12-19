@@ -6,12 +6,18 @@ module.exports = {
     'function-comma-space-after': 'always-single-line',
     'declaration-empty-line-before': 'never',
     'no-descending-specificity': null,
+    'block-closing-brace-newline-after': [
+      'always',
+      {
+        ignoreAtRules: ['if', 'else'],
+      },
+    ],
     'at-rule-empty-line-before': [
       'always',
       {
         except: ['blockless-after-same-name-blockless', 'first-nested'],
         ignore: ['after-comment'],
-        ignoreAtRules: ['else', 'if'],
+        ignoreAtRules: ['if', 'else'],
       },
     ],
     'string-quotes': 'single',
