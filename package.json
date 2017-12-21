@@ -8,7 +8,7 @@
     "url": "git+https://github.com/strt/css.git"
   },
   "scripts": {
-    "precommit": "doctoc readme.md --maxlevel 2 --title '## Table of Contents'"
+    "precommit": "doctoc readme.md --maxlevel 2 --title '## Table of Contents' && git add readme.md"
   },
   "author": "Alexander Nanberg <alexander.nanberg@strateg.se>",
   "homepage": "https://github.com/strt/css#readme",

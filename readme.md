@@ -1,17 +1,16 @@
+# Strateg (S)CSS Styleguide
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of Contents
 
-- [Strateg (S)CSS Styleguide](#strateg-scss-styleguide)
-  - [Terminology](#terminology)
-  - [Linting](#linting)
-  - [Naming convention](#naming-convention)
-  - [Formatting](#formatting)
-  - [Sass](#sass)
+- [Terminology](#terminology)
+- [Linting](#linting)
+- [Naming convention](#naming-convention)
+- [Formatting](#formatting)
+- [Sass](#sass)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-# Strateg (S)CSS Styleguide
 
 ## Terminology
 CSS-Tricks does a great job of explaining the basic CSS terminology [here](https://css-tricks.com/css-ruleset-terminology/).
