@@ -2,26 +2,32 @@ module.exports = {
   extends: 'stylelint-config-standard',
   plugins: ['stylelint-scss', 'stylelint-order'],
   rules: {
-    'color-hex-length': 'long',
-    'function-comma-space-after': 'always-single-line',
-    'declaration-empty-line-before': 'never',
-    'no-descending-specificity': null,
+    'at-rule-no-unknown': null,
+    'at-rule-empty-line-before': [
+      'always',
+      {
+        except: ['first-nested', 'blockless-after-blockless'],
+        ignore: ['after-comment'],
+        ignoreAtRules: ['else'],
+      },
+    ],
     'block-closing-brace-newline-after': [
       'always',
       {
         ignoreAtRules: ['if', 'else'],
       },
     ],
-    'at-rule-empty-line-before': [
-      'always',
-      {
-        except: ['first-nested', 'blockless-after-blockless'],
-        ignoreAtRules: ['if', 'else', 'include', 'extend'],
-      },
-    ],
+    'color-hex-length': 'long',
+    'declaration-empty-line-before': 'never',
+    'no-descending-specificity': null,
     'string-quotes': 'single',
-    'at-rule-no-unknown': null,
     'scss/at-rule-no-unknown': true,
+    'scss/dollar-variable-colon-space-after': 'always-single-line',
+    'scss/at-else-closing-brace-newline-after': 'always-last-in-chain',
+    'scss/at-else-closing-brace-space-after': 'always-intermediate',
+    'scss/at-else-empty-line-before': 'never',
+    'scss/at-if-closing-brace-newline-after': 'always-last-in-chain',
+    'scss/at-if-closing-brace-space-after': 'always-intermediate',
     'order/properties-order': [
       [
         {

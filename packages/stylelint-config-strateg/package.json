@@ -1,10 +1,12 @@
 {
   "name": "stylelint-config-strateg",
-  "version": "1.5.5",
+  "version": "1.6.0",
   "description": "Strateg's Stylelint config",
   "main": "index.js",
   "scripts": {
-    "test": "eslint *.js"
+    "list": "eslint *.js",
+    "test": "jest",
+    "watch": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -23,7 +25,10 @@
   },
   "devDependencies": {
     "eslint": "^4.13.0",
-    "eslint-config-google": "^0.9.1"
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "jest": "^22.0.3",
+    "stylelint": "^8.4.0"
   },
   "peerDependencies": {
     "stylelint": "^8.3.0"
