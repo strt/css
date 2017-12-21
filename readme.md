@@ -8,7 +8,6 @@
 - [Linting](#linting)
 - [Naming convention](#naming-convention)
 - [Formatting](#formatting)
-- [Sass](#sass)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -27,12 +26,40 @@ Useful reading
 - https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
 
 ## Formatting
-- Do not use ID selectors
-- camelCase your selectors
-- **Never** nest BEM selectors more than one level deep
+### Do not use ID selectors
+This will only create unnecessary selector specificity.
+
+### camelCase selectors
+camelCasing will provide a better grouping of class names and make them easier to mentally process.
+
+🚫 Don't
+```css
+.header-nav__list-item.-is-active {}
+```
+
+✅ Do
+```css
+.headerNav__listItem.-isActive {}
+```
+
+Note: the only exception of this rule is the JavaScript hooks.
+
+### Never nest BEM selectors more than one level
+If you need to neest deeper it probably means that you need to break out a element to become a block.
+
+🚫 Don't
+```css
+.nav__list__item {}
+```
+
+✅ Do
+```css
+.nav__item {}
+```
 
 ### JavaScript hooks
+Avoid binding to the same class in your CSS and JavaScript. Using the same class will make it harder to refactor and reuse functionality. We use a specific JavaScript class prefixed with `.js-` instead.
 
-## Sass
-
-### Extend
+```html
+<button class="button js-open-menu">Open menu</button>
+```
