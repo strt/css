@@ -44,8 +44,8 @@ camelCasing will provide a better grouping of class names and make them easier t
 
 Note: the only exception of this rule is the JavaScript hooks.
 
-### Never nest BEM selectors more than one level
-If you need to neest deeper it probably means that you need to break out a element to become a block.
+### Never chain BEM element selectors
+If you need to chain element selectors it probably means that you need to convert an element to a block.
 
 🚫 Don't
 ```css
@@ -55,6 +55,8 @@ If you need to neest deeper it probably means that you need to break out a eleme
 ✅ Do
 ```css
 .nav__item {}
+/* or */
+.navItem {}
 ```
 
 ### JavaScript hooks
