@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [Strateg (S)CSS Styleguide](#strateg-scss-styleguide)
+  - [Terminology](#terminology)
+  - [Linting](#linting)
+  - [Naming convention](#naming-convention)
+  - [Formatting](#formatting)
+  - [Sass](#sass)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Strateg (S)CSS Styleguide
 
 ## Terminology
@@ -18,3 +31,9 @@ Useful reading
 - Do not use ID selectors
 - camelCase your selectors
 - **Never** nest BEM selectors more than one level deep
+
+### JavaScript hooks
+
+## Sass
+
+### Extend
