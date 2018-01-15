@@ -30,7 +30,7 @@ Useful reading
 This will only create unnecessary selector specificity.
 
 ### camelCase selectors
-camelCasing will provide a better grouping of class names and make them easier to mentally process.
+camelCasing will provide a better grouping of class names and make them easier to read and mentally process.
 
 🚫 Don't
 ```css
@@ -42,7 +42,7 @@ camelCasing will provide a better grouping of class names and make them easier t
 .headerNav__listItem.-isActive {}
 ```
 
-Note: the only exception of this rule is the JavaScript hooks.
+Note: the only exception of this rule are the [JavaScript hooks](#javascript-hooks).
 
 ### Never chain BEM element selectors
 If you need to chain element selectors it probably means that you need to convert an element to a block.
