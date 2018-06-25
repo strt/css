@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-strateg",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "Strateg's Stylelint config",
   "main": "index.js",
   "scripts": {
