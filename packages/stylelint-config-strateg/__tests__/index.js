@@ -1,6 +1,6 @@
 const fs = require('fs');
-const config = require('../');
 const stylelint = require('stylelint');
+const config = require('../');
 
 const validCss = fs.readFileSync('./__tests__/css-valid.scss', 'utf-8');
 const invalidCss = fs.readFileSync('./__tests__/css-invalid.scss', 'utf-8');
@@ -16,14 +16,13 @@ describe('valid css', () => {
     });
   });
 
-  it('did not error', () =>
-    result.then((data) => {
-      if (data.errored) {
-        console.log(data.results[0].warnings);
-      }
+  it('did not error', () => result.then((data) => {
+    if (data.errored) {
+      console.log(data.results[0].warnings);
+    }
 
-      return expect(data.errored).toBeFalsy();
-    }));
+    return expect(data.errored).toBeFalsy();
+  }));
 });
 
 describe('invalid css', () => {
