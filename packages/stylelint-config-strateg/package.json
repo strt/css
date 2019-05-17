@@ -27,8 +27,5 @@
     "jest": "^24.0.0",
     "prettier": "^1.16.4",
     "stylelint": "^9.10.1"
-  },
-  "peerDependencies": {
-    "stylelint": "^9.10.1"
   }
 }
